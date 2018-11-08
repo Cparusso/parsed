@@ -1,21 +1,24 @@
 import React, { Component } from 'react';
 import DisplayCard from './DisplayCard';
+import uuid from 'uuid'
 
 class DisplayCards extends Component {
 
   makeDisplayCards = () => {
-    console.log(this.props.displayData);
-    // return this.props.displayData.map(dataObj => {
-    //   console.log(dataObj)
-    // })
+    let cards = this.props.displayData
 
-    return <DisplayCard />
+    return cards.map( card => {
+      return (
+          <div>
+            <DisplayCard key={uuid()} card={card}/>
+          </div>
+      )
+    })
   }
 
   render() {
     return (
       <div>
-        DISPLAYCARDS
         {this.makeDisplayCards()}
       </div>
     )

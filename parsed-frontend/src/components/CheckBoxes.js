@@ -32,9 +32,7 @@ const CheckBoxes = (props) => {
       <h1>Choose Which Data Points You Would Like to Render</h1>
       <form onSubmit={submitDataSelections} >
         {sortThroughApiData()}
-        <NavLink to='/display'>
           <input type='submit' value='Submit'/>
-        </NavLink>
       </form>
     </div>
   )

@@ -4,7 +4,8 @@ import Customize from './components/Customize'
 import Display from './components/Display'
 import Nav from './components/Nav'
 import Error from './components/Error'
-import { BrowserRouter, Route, Switch } from "react-router-dom"
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom"
+
 
 class App extends Component {
 
@@ -12,7 +13,8 @@ class App extends Component {
     apiUrl: '',
     parsedData: [],
     selectedDataAttributes: [],
-    displayData: []
+    displayData: [],
+    redirectToDisplay: false
   }
 
   changeApiUrl = (apiUrl) => {
@@ -55,15 +57,28 @@ class App extends Component {
     }
 
     this.setState({
-      displayData: newArray
+      displayData: newArray,
+      redirectToDisplay: true
     })
   }
+
+  renderDisplay = () => {
+    if (this.state.redirectToDisplay) {
+      console.log('this worked')
+      return <Redirect to='/display' />
+    }
+    else {
+      console.log('didnt work')
+    }
+  }
+
 
   render() {
     return (
       <BrowserRouter>
         <div>
           <Nav />
+          {this.renderDisplay()}
           <Switch>
             <Route path="/welcome" component={() => <Welcome changeApiUrl={this.changeApiUrl} />} />
             <Route path="/customize" component={() => <Customize parsedData={this.state.parsedData} changeSelectedDataAttributes={this.changeSelectedDataAttributes} />} />
