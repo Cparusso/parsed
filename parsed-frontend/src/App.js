@@ -74,6 +74,10 @@ class App extends Component {
 
   renderDisplay = () => {
     if (this.state.redirectToDisplay) {
+      this.setState({
+        redirectToDisplay: !this.state.redirectToDisplay
+      })
+
       return <Redirect to='/display' />
     }
   }
