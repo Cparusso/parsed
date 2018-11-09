@@ -82,7 +82,7 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div>
+        <div className="app-display">
           <Nav />
           {this.renderDisplay()}
           <Switch>
