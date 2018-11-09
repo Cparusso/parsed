@@ -8,7 +8,11 @@ class DisplayCard extends Component {
     const objKeys = Object.keys(currentCard)
 
     return objKeys.map( key => {
-      return <div><p>{key.split('_').join(' ')}</p><p>{currentCard[key]}</p></div>
+      return (
+        <div>
+          <p><b>{key.split('_').join(' ')}:</b> <span>{currentCard[key]}</span></p>
+        </div>
+      )
     })
   }
 

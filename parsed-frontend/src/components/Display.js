@@ -5,8 +5,10 @@ class Display extends Component {
   render() {
     return (
       <div>
-        DISPLAY
-        <DisplayCards parsedData={this.props.parsedData} displayData={this.props.displayData} />
+        <DisplayCards
+          parsedData={this.props.parsedData}
+          displayData={this.props.displayData}
+        />
       </div>
     )
   }
