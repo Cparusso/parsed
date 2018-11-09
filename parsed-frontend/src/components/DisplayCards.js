@@ -19,17 +19,13 @@ class DisplayCards extends Component {
   manipulateParsedDataForCsv = () => {
     let data = this.props.parsedData
     let headers = Object.keys(data[0])
-    let fixedHeader = headers.map( header => {
-      return header.split('_').join(' ')
-    })
+    let fixedHeader = headers.map(header => header.split('_').join(' '))
 
     let allRows = []
 
     let rows = data.map( data => {
       let newArray =[]
-      let grabRows = headers.forEach( header => {
-        newArray.push(data[header])
-      })
+      let grabRows = headers.forEach(header => newArray.push(data[header]))
 
       allRows.push(newArray)
     })
