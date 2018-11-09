@@ -8,9 +8,6 @@ import Error from './components/Error'
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom"
 import './App.css'
 
-// CURRENTLY CAN ONLY DO ONE WITHOUT REFRESHING
-// NEED TO ADD A BUTTON SOMEWHERE THAT WILL REDIRECT YOU TO THE WELCOME PAGE AND RESET THE STATES
-
 class App extends Component {
 
   state = {
