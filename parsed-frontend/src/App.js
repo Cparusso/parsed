@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import testData from './db.json'
 import Welcome from './components/Welcome'
 import Customize from './components/Customize'
 import Display from './components/Display'
@@ -7,6 +8,7 @@ import Error from './components/Error'
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom"
 import './App.css'
 
+// CURRENTLY CAN ONLY DO ONE WITHOUT REFRESHING
 
 class App extends Component {
 
@@ -25,13 +27,19 @@ class App extends Component {
   }
 
   parseApi = () => {
-    fetch(this.state.apiUrl)
-    .then(r => r.json())
-    .then(parsedData => {
+    if (this.state.apiUrl === 'test') {
       this.setState({
-        parsedData
+        parsedData: testData
       })
-    })
+    } else if (this.state.apiUrl !== 'test') {
+      fetch(this.state.apiUrl)
+      .then(r => r.json())
+      .then(parsedData => {
+        this.setState({
+          parsedData
+        })
+      })
+    }
   }
 
   changeSelectedDataAttributes = (selectedDataAttributes) => {

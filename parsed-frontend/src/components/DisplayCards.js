@@ -38,22 +38,19 @@ class DisplayCards extends Component {
     finalFile.push(headers)
     finalFile.push(allRows)
     console.log(finalFile)
+    // debugger
     return finalFile
-    debugger
-
   }
 
   render() {
+    this.manipulateParsedDataForCsv()
+
     return (
       <div className="display-cards">
         {this.makeDisplayCards()}
-        {this.manipulateParsedDataForCsv()}
-
       </div>
     )
   }
 }
 
 export default DisplayCards
-
-// <DisplayCard dataObj={dataObj} />

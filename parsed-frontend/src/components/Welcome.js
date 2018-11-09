@@ -18,7 +18,9 @@ class Welcome extends Component {
 
     return (
       <div>
-        <h1>Parse http://nflarrest.com/api/v1/team </h1>
+        <h1>Parse</h1>
+        <h4>http://nflarrest.com/api/v1/team</h4>
+        <h4>Offline? Type 'test' to get started!</h4>
         <input type='text' onChange={this.updateText} />
         <NavLink to='/customize'>
           <button onClick={() => this.props.changeApiUrl(currentText)} >Submit</button>
