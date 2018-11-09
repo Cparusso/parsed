@@ -7,7 +7,6 @@ class Customize extends Component {
   render() {
     return (
       <div>
-        <h1>Customize</h1>
         <CheckBoxes changeSelectedDataAttributes={this.props.changeSelectedDataAttributes} parsedData={this.props.parsedData}/>
       </div>
     )

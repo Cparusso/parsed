@@ -17,20 +17,14 @@ class Welcome extends Component {
     const { currentText } = this.state
 
     return (
-      <div>
-        <h1>Parse</h1>
-        <h2>Curious to see how this works? Here are some links from the NFLArrest API to play around with!</h2>
-        <h4>Top Teams:</h4>
-        <p>http://nflarrest.com/api/v1/team</p>
-        <h4>Top Players:</h4>
-        <p>http://nflarrest.com/api/v1/player</p>
-        <h4>Top Positions:</h4>
-        <p>http://nflarrest.com/api/v1/position</p>
-        <h4>Offline? Just click submit to get started!</h4>
-        <input type='text' onChange={this.updateText} />
+      <div className='welcome-page'>
+        <h1 className='welcome-phrase'>Paste Any JSON API Below To Get Started</h1>
+        <input className='api-input' type='text' onChange={this.updateText} />
+        <br />
         <NavLink to='/customize'>
-          <button onClick={() => this.props.changeApiUrl(currentText)} >Submit</button>
+          <button className='submit-btn' onClick={() => this.props.changeApiUrl(currentText)} >Submit</button>
         </NavLink>
+        <p>http://nflarrest.com/api/v1/team, http://nflarrest.com/api/v1/player, http://nflarrest.com/api/v1/position</p>
       </div>
     )
   }

@@ -1,3 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Days+One" );
+
+html {
+  background-color: #2F4550;
+  margin: auto 0
+}
+
+.api-input {
+  width: 600px;
+  height: 80px;
+  border-radius: 80px;
+  outline: none;
+  text-align: center;
+  font-size: 40px;
+}
+
+.welcome-phrase {
+  color: #FFFFFF;
+  font-family: 'Days One', sans-serif;
+}
+
+.welcome-page {
+  position: absolute;
+  width: 800px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.submit-btn {
+  width: 300px;
+  height: 40px;
+  margin: 30px;
+  border-radius: 80px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  outline: none;
+  font-size: 20px;
+  border: none
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  background-color: rgba(211,211,211, 0.8);
+
+}
+
+.submit-btn:active {
+  transform: translateY(-2px);
+}
+
+
+
+.nav-bar {
+  position: relative;
+  background-color: black;
+  height: 50px;
+  z-index: 1;
+}
+
+.nav-links {
+  color: #FFFFFF;
+  font-size: 17px;
+  margin: 15px;
+  text-decoration: none;
+  font-family: 'Days One', sans-serif;
+}
+
+.nav-spacing {
+  padding-top: 1%;;
+}
+
+.customize-page {
+  position: absolute;
+  width: 1000px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
 .display-card {
   border: solid black 1px;
   margin: 10px;
