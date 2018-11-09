@@ -32,10 +32,24 @@ class DisplayCards extends Component {
 
     let finalFile = []
     finalFile.push(headers)
-    finalFile.push(allRows)
-    console.log(finalFile)
-    // debugger
-    return finalFile
+    let holderArray = [allRows.join('\n')]
+    finalFile.push(holderArray)
+
+    let finalCsv = finalFile.join('\n')
+    console.log(finalCsv)
+    return finalCsv
+  }
+
+  downloadCsv = (data) => {
+    const blob = new Blob([data], { type: 'text/csv'})
+    const url = window.URL.createObjectURL(blob)
+    const a = document.createElement('a')
+    a.setAttribute('hidden', '')
+    a.setAttribute('href', url)
+    a.setAttribute('download', 'json-api.csv')
+    document.body.appendChild(a)
+    a.click()
+    document.body.removeChild(a)
   }
 
   render() {
@@ -44,6 +58,7 @@ class DisplayCards extends Component {
     return (
       <div className="display-cards">
         {this.makeDisplayCards()}
+        <button onClick={() => this.downloadCsv(this.manipulateParsedDataForCsv())}>Download</button>
       </div>
     )
   }
