@@ -6,9 +6,6 @@ const newArray = []
 class RecursionTest extends Component {
 
   parseWithRecursion = (jsonArrayOfObjects) => {
-    // console.log('in the function');
-    // console.log(jsonArrayOfObjects);
-
     if (Array.isArray(jsonArrayOfObjects)) {
       const firstObj = jsonArrayOfObjects[0]
       for (let key in firstObj) {

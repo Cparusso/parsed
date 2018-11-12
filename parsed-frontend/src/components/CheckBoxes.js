@@ -13,17 +13,39 @@ const CheckBoxes = (props) => {
     props.changeSelectedDataAttributes(selectedEventNames)
   }
 
-  function sortThroughApiData() {
-    let apiData = props.parsedData
-    let apiDataKeys
+  const newArray = []
 
-    if (apiData.length > 0) {
-      let firstObj = apiData[0]
-      apiDataKeys = Object.keys(firstObj)
+  const sortThroughApiData = (jsonArrayOfObjects) => {
+    if (jsonArrayOfObjects.length > 0) {
+      if (Array.isArray(jsonArrayOfObjects)) {
+        const firstObj = jsonArrayOfObjects[0]
+        for (let key in firstObj) {
+          newArray.push(key)
+          if (Array.isArray(firstObj[key])) {
+            sortThroughApiData(firstObj[key])
+          }
+          else if (typeof firstObj[key] === 'object') {
+            objectRecursion(firstObj, key)
+          }
+        }
+      }
+      console.log(newArray);
+
+      if (newArray.length > 0) {
+        return newArray.map(data => <CheckBox data={data} key={data} />)
+      }
     }
+  }
 
-    if (apiDataKeys) {
-      return apiDataKeys.map(data => <CheckBox data={data} key={data} />)
+  const objectRecursion = (object, key) => {
+    if (typeof object[key] !== 'object') {
+      return null
+    }
+    else {
+      for (let keyTwo in object[key]) {
+        newArray.push(keyTwo)
+        objectRecursion(object[key], keyTwo)
+      }
     }
   }
 
@@ -31,7 +53,7 @@ const CheckBoxes = (props) => {
     <div className='customize-page'>
       <h1>Choose Which Data Points You Would Like to Render</h1>
       <form onSubmit={submitDataSelections} >
-        {sortThroughApiData()}
+        {sortThroughApiData(props.parsedData)}
         <br />
         <input type='submit' value='Submit'/>
       </form>
