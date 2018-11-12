@@ -13,39 +13,17 @@ const CheckBoxes = (props) => {
     props.changeSelectedDataAttributes(selectedEventNames)
   }
 
-  const newArray = []
 
   const sortThroughApiData = (jsonArrayOfObjects) => {
+    let foundKeys
+
     if (jsonArrayOfObjects.length > 0) {
-      if (Array.isArray(jsonArrayOfObjects)) {
-        const firstObj = jsonArrayOfObjects[0]
-        for (let key in firstObj) {
-          newArray.push(key)
-          if (Array.isArray(firstObj[key])) {
-            sortThroughApiData(firstObj[key])
-          }
-          else if (typeof firstObj[key] === 'object') {
-            objectRecursion(firstObj, key)
-          }
-        }
-      }
-      console.log(newArray);
-
-      if (newArray.length > 0) {
-        return newArray.map(data => <CheckBox data={data} key={data} />)
-      }
+      const firstObj = jsonArrayOfObjects[0]
+      foundKeys = Object.keys(firstObj)
     }
-  }
 
-  const objectRecursion = (object, key) => {
-    if (typeof object[key] !== 'object') {
-      return null
-    }
-    else {
-      for (let keyTwo in object[key]) {
-        newArray.push(keyTwo)
-        objectRecursion(object[key], keyTwo)
-      }
+    if (foundKeys) {
+      return foundKeys.map(data => <CheckBox data={data} key={data} />)
     }
   }
 
@@ -62,3 +40,39 @@ const CheckBoxes = (props) => {
 }
 
 export default CheckBoxes;
+
+
+
+// const sortThroughApiData = (jsonArrayOfObjects) => {
+//   if (jsonArrayOfObjects.length > 0) {
+//     if (Array.isArray(jsonArrayOfObjects)) {
+//       const firstObj = jsonArrayOfObjects[0]
+//       for (let key in firstObj) {
+//         newArray.push(key)
+//         if (Array.isArray(firstObj[key])) {
+//           sortThroughApiData(firstObj[key])
+//         }
+//         else if (typeof firstObj[key] === 'object') {
+//           objectRecursion(firstObj, key)
+//         }
+//       }
+//     }
+//     console.log(newArray);
+//
+//     if (newArray.length > 0) {
+//       return newArray.map(data => <CheckBox data={data} key={data} />)
+//     }
+//   }
+// }
+//
+// const objectRecursion = (object, key) => {
+//   if (typeof object[key] !== 'object') {
+//     return null
+//   }
+//   else {
+//     for (let keyTwo in object[key]) {
+//       newArray.push(keyTwo)
+//       objectRecursion(object[key], keyTwo)
+//     }
+//   }
+// // }

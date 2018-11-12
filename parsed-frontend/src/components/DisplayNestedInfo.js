@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class DisplayCard extends Component {
+class DisplayNestedInfo extends Component {
 
   render() {
     return (
@@ -10,4 +10,4 @@ class DisplayCard extends Component {
   }
 }
 
-export default DisplayCard
+export default DisplayNestedInfo

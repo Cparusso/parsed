@@ -36,7 +36,6 @@ class DisplayCards extends Component {
     finalFile.push(holderArray)
 
     let finalCsv = finalFile.join('\n')
-    console.log(finalCsv)
     return finalCsv
   }
 

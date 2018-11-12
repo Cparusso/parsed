@@ -1,139 +1,88 @@
 [
   {
-    "Team": "DEN",
-    "Team_preffered_name": [{"number of bananas": 1},{"number of bananas": 2},{"third obj in nested array": 3}],
-    "Team_name": {
-      "First key in first nest": "sports",
-      "second key": "Detroit Lions",
-      "third key": {
-        "First key in second nest": "DET",
-        "second key": "Detroit Lions",
-        "third key": "Lions"
+    "Name": "Charlie",
+    "Age": 26,
+    "Family":
+    [
+      {
+        "Brothers":
+        [
+          {
+            "Name": "Mike",
+            "Age": 28
+          },
+          {
+            "Name": "Skyler",
+            "Age": 19
+          }
+        ]
+      },
+      {
+        "Sisters":
+        [
+          {
+            "Name": "Annarose",
+            "Age": 30
+          }
+        ]
       }
-    },
-    "Team_city": "Denver",
-    "Team_Conference": "AFC",
-    "Team_Conference_Division": "AFC West",
-    "Team_logo_id": "10",
-    "arrest_count": "50"
+    ]
+  },
+  {
+    "Name": "Charlie",
+    "Age": 26,
+    "Family":
+    [
+      {
+        "Brothers":
+        [
+          {
+            "Name": "Mike",
+            "Age": 28
+          },
+          {
+            "Name": "Skyler",
+            "Age": 19
+          }
+        ]
+      },
+      {
+        "Sisters":
+        [
+          {
+            "Name": "Annarose",
+            "Age": 30
+          }
+        ]
+      }
+    ]
   },{
-    "Team": "DEN",
-    "Team_preffered_name": [{"number of bananas": 1},{"number of bananas": 2},{"third obj in nested array": 3}],
-    "Team_name": {
-      "First key in first nest": "sports",
-      "second key": "Detroit Lions",
-      "third key": {
-        "First key in second nest": "DET",
-        "second key": "Detroit Lions",
-        "third key": "Lions"
+    "Name": "Charlie",
+    "Age": 26,
+    "Family":
+    [
+      {
+        "Brothers":
+        [
+          {
+            "Name": "Mike",
+            "Age": 28
+          },
+          {
+            "Name": "Skyler",
+            "Age": 19
+          }
+        ]
+      },
+      {
+        "Sisters":
+        [
+          {
+            "Name": "Annarose",
+            "Age": 30
+          }
+        ]
       }
-    },
-    "Team_city": "Denver",
-    "Team_Conference": "AFC",
-    "Team_Conference_Division": "AFC West",
-    "Team_logo_id": "10",
-    "arrest_count": "50"
-  },{
-    "Team": "DEN",
-    "Team_preffered_name": [{"number of bananas": 1},{"number of bananas": 2},{"third obj in nested array": 3}],
-    "Team_name": {
-      "First key in first nest": "sports",
-      "second key": "Detroit Lions",
-      "third key": {
-        "First key in second nest": "DET",
-        "second key": "Detroit Lions",
-        "third key": "Lions"
-      }
-    },
-    "Team_city": "Denver",
-    "Team_Conference": "AFC",
-    "Team_Conference_Division": "AFC West",
-    "Team_logo_id": "10",
-    "arrest_count": "50"
-  },{
-    "Team": "DEN",
-    "Team_preffered_name": [{"number of bananas": 1},{"number of bananas": 2},{"third obj in nested array": 3}],
-    "Team_name": {
-      "First key in first nest": "sports",
-      "second key": "Detroit Lions",
-      "third key": {
-        "First key in second nest": "DET",
-        "second key": "Detroit Lions",
-        "third key": "Lions"
-      }
-    },
-    "Team_city": "Denver",
-    "Team_Conference": "AFC",
-    "Team_Conference_Division": "AFC West",
-    "Team_logo_id": "10",
-    "arrest_count": "50"
-  },{
-    "Team": "DEN",
-    "Team_preffered_name": [{"number of bananas": 1},{"number of bananas": 2},{"third obj in nested array": 3}],
-    "Team_name": {
-      "First key in first nest": "sports",
-      "second key": "Detroit Lions",
-      "third key": {
-        "First key in second nest": "DET",
-        "second key": "Detroit Lions",
-        "third key": "Lions"
-      }
-    },
-    "Team_city": "Denver",
-    "Team_Conference": "AFC",
-    "Team_Conference_Division": "AFC West",
-    "Team_logo_id": "10",
-    "arrest_count": "50"
-  },{
-    "Team": "DEN",
-    "Team_preffered_name": [{"number of bananas": 1},{"number of bananas": 2},{"third obj in nested array": 3}],
-    "Team_name": {
-      "First key in first nest": "sports",
-      "second key": "Detroit Lions",
-      "third key": {
-        "First key in second nest": "DET",
-        "second key": "Detroit Lions",
-        "third key": "Lions"
-      }
-    },
-    "Team_city": "Denver",
-    "Team_Conference": "AFC",
-    "Team_Conference_Division": "AFC West",
-    "Team_logo_id": "10",
-    "arrest_count": "50"
-  },{
-    "Team": "DEN",
-    "Team_preffered_name": [{"number of bananas": 1},{"number of bananas": 2},{"third obj in nested array": 3}],
-    "Team_name": {
-      "First key in first nest": "sports",
-      "second key": "Detroit Lions",
-      "third key": {
-        "First key in second nest": "DET",
-        "second key": "Detroit Lions",
-        "third key": "Lions"
-      }
-    },
-    "Team_city": "Denver",
-    "Team_Conference": "AFC",
-    "Team_Conference_Division": "AFC West",
-    "Team_logo_id": "10",
-    "arrest_count": "50"
-  },{
-    "Team": "DEN",
-    "Team_preffered_name": [{"number of bananas": 1},{"number of bananas": 2},{"third obj in nested array": 3}],
-    "Team_name": {
-      "First key in first nest": "sports",
-      "second key": "Detroit Lions",
-      "third key": {
-        "First key in second nest": "DET",
-        "second key": "Detroit Lions",
-        "third key": "Lions"
-      }
-    },
-    "Team_city": "Denver",
-    "Team_Conference": "AFC",
-    "Team_Conference_Division": "AFC West",
-    "Team_logo_id": "10",
-    "arrest_count": "50"
+    ]
   }
 ]

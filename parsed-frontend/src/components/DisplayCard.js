@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import DisplayInfo from './DisplayInfo'
+import uuid from 'uuid'
 
 class DisplayCard extends Component {
 
@@ -6,10 +8,10 @@ class DisplayCard extends Component {
     const currentCard = this.props.card
     const objKeys = Object.keys(currentCard)
 
-    return objKeys.map( key => {
+    return objKeys.map( currentKey => {
       return (
         <div>
-          <p><b>{key.split('_').join(' ')}:</b> <span>{currentCard[key]}</span> — <span>more info</span></p>
+          <DisplayInfo key={uuid} currentCard={currentCard} currentKey={currentKey}/>
         </div>
       )
     })
