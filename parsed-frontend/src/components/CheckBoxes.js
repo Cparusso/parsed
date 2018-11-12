@@ -27,14 +27,37 @@ const CheckBoxes = (props) => {
     }
   }
 
+  const selectAll = () => {
+    const checkboxes = document.querySelectorAll(".checkbox")
+    const checkboxesArr = Array.from(checkboxes)
+
+    checkboxesArr.forEach(checkbox => {
+      checkbox.checked = true
+    })
+
+    document.getElementById("selectButton").innerText = 'Deselect All'
+  }
+
+  const deselectAll = () => {
+    const checkboxes = document.querySelectorAll(".checkbox")
+    const checkboxesArr = Array.from(checkboxes)
+
+    checkboxesArr.forEach(checkbox => {
+      checkbox.checked = false
+    })
+
+    document.getElementById("selectButton").innerText = 'Select All'
+  }
+
   return (
     <div className='customize-page'>
-      <h1>Choose Which Data Points You Would Like to Render</h1>
+      <h1 className="customize-text" >Choose Which Data Points You Would Like to Render</h1>
       <form onSubmit={submitDataSelections} >
         {sortThroughApiData(props.parsedData)}
         <br />
         <input type='submit' value='Submit'/>
       </form>
+      <button id='selectButton' onClick={selectAll} >Select All</button>
     </div>
   )
 }

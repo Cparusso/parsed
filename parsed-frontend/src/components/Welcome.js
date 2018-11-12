@@ -18,6 +18,7 @@ class Welcome extends Component {
 
     return (
       <div className='welcome-page'>
+        <h1 className='welcome-phrase' id='logo'>Parsed</h1>
         <h1 className='welcome-phrase'>Paste Any JSON API Below To Get Started</h1>
         <input className='api-input' type='text' onChange={this.updateText} />
         <br />
