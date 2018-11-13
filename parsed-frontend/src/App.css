@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Didact+Gothic|Fredoka+One|Signika|Yantramanav");
 
 html {
-  background-color: #2F4550;
+  background-color: #5f9ab7;
   margin: auto 0
 }
 
@@ -21,8 +21,8 @@ html {
 }
 
 #logo {
-  font-size: 5em;
-  margin: -0.1em;
+  font-size: 6em;
+  margin: 0em 0.2em;
 }
 
 .welcome-page {
@@ -55,21 +55,28 @@ html {
   transform: translateY(-2px);
 }
 
-
-
 .nav-bar {
   position: relative;
-  background-color: black;
+  background-color: #4f5358d9;
   height: 50px;
   z-index: 1;
 }
 
 .nav-links {
-  color: #FFFFFF;
+  color: #eeeeec;
+  font-weight: bold;
   font-size: 17px;
   margin: 15px;
   text-decoration: none;
-  font-family: 'Days One', sans-serif;
+  font-family: 'Signika', sans-serif;
+}
+
+.nav-links:hover {
+  color: #ffffff70;
+  font-size: 17px;
+  margin: 15px;
+  text-decoration: none;
+  font-family: 'Signika', sans-serif;
 }
 
 .nav-spacing {
@@ -109,7 +116,7 @@ input[type='checkbox'] + label {
 }
 
 input[type='checkbox']:checked  + label {
-  background: #bfbfbf;
+  background: #d3d3d3cc;
   animation-name: stretch;
   animation-duration: .2s;
   animation-timing-function: ease-out;
@@ -149,11 +156,18 @@ input[type='checkbox']:checked  + label {
 
 .display-card {
   border: solid black 1px;
+  border-radius: 1em;
   margin: 10px;
   width: 200px;
+  padding: 15px;
+  background-color: #FFFFFF;
 }
 
 .display-cards {
   display: flex;
   flex-wrap: wrap;
+}
+
+.nested-display {
+  padding-left: 15px;
 }
