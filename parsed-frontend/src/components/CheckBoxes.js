@@ -31,22 +31,19 @@ const CheckBoxes = (props) => {
     const checkboxes = document.querySelectorAll(".checkbox")
     const checkboxesArr = Array.from(checkboxes)
 
-    checkboxesArr.forEach(checkbox => {
-      checkbox.checked = true
-    })
+    if (document.getElementById("selectButton").innerText === 'Select All') {
+      checkboxesArr.forEach(checkbox => {
+        checkbox.checked = true
+      })
 
-    document.getElementById("selectButton").innerText = 'Deselect All'
-  }
+      document.getElementById("selectButton").innerText = 'Deselect All'
+    } else {
+      checkboxesArr.forEach(checkbox => {
+        checkbox.checked = false
+      })
 
-  const deselectAll = () => {
-    const checkboxes = document.querySelectorAll(".checkbox")
-    const checkboxesArr = Array.from(checkboxes)
-
-    checkboxesArr.forEach(checkbox => {
-      checkbox.checked = false
-    })
-
-    document.getElementById("selectButton").innerText = 'Select All'
+      document.getElementById("selectButton").innerText = 'Select All'
+    }
   }
 
   return (
@@ -55,49 +52,11 @@ const CheckBoxes = (props) => {
       <form onSubmit={submitDataSelections} >
         {sortThroughApiData(props.parsedData)}
         <br />
-        <div className='customize-btns'>
-          <input className='customize-submit' type='submit' value='Submit'/>
-          <button id='selectButton' onClick={selectAll} >Select All</button>
-        </div>
+        <input className='customize-btns customize-submit' type='submit' value='Submit'/>
       </form>
+      <button className='customize-btns' id='selectButton' onClick={selectAll} >Select All</button>
     </div>
   )
 }
 
 export default CheckBoxes;
-
-
-
-// const sortThroughApiData = (jsonArrayOfObjects) => {
-//   if (jsonArrayOfObjects.length > 0) {
-//     if (Array.isArray(jsonArrayOfObjects)) {
-//       const firstObj = jsonArrayOfObjects[0]
-//       for (let key in firstObj) {
-//         newArray.push(key)
-//         if (Array.isArray(firstObj[key])) {
-//           sortThroughApiData(firstObj[key])
-//         }
-//         else if (typeof firstObj[key] === 'object') {
-//           objectRecursion(firstObj, key)
-//         }
-//       }
-//     }
-//     console.log(newArray);
-//
-//     if (newArray.length > 0) {
-//       return newArray.map(data => <CheckBox data={data} key={data} />)
-//     }
-//   }
-// }
-//
-// const objectRecursion = (object, key) => {
-//   if (typeof object[key] !== 'object') {
-//     return null
-//   }
-//   else {
-//     for (let keyTwo in object[key]) {
-//       newArray.push(keyTwo)
-//       objectRecursion(object[key], keyTwo)
-//     }
-//   }
-// // }

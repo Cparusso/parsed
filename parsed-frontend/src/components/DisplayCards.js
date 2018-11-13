@@ -55,9 +55,14 @@ class DisplayCards extends Component {
     this.manipulateParsedDataForCsv()
 
     return (
-      <div className="display-cards">
-        {this.makeDisplayCards()}
-        <button onClick={() => this.downloadCsv(this.manipulateParsedDataForCsv())}>Download</button>
+
+      <div className='cards-container'>
+        <div className="display-cards">
+          {this.makeDisplayCards()}
+        </div>
+        <div className='download-csv'>
+          <button className='download-btn' onClick={() => this.downloadCsv(this.manipulateParsedDataForCsv())}>Download as CSV<br></br><span>{'<--'}</span></button>
+        </div>
       </div>
     )
   }

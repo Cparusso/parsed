@@ -1,26 +1,5 @@
 import React, { Component } from 'react';
 
-// const playData = [
-//   {
-//   name: 'Mike',
-//   age: 24,
-//   family:
-//     {
-//     brother: 'David',
-//     sister: 'sarah'
-//   },
-//   {
-//     name: 'Charlie',
-//     age: 26,
-//     family:
-//     {
-//       brother: 'Mike',
-//       sister: 'ana rose'
-//   }
-// }
-// ]
-
-
 class DisplayInfo extends Component {
 
   displayNestInfo = (object, currentKey) => {
@@ -49,7 +28,7 @@ class DisplayInfo extends Component {
     }
     else {
       console.log(object[currentKey])
-      return <p>{currentKey.split('_').join(' ')}: {object[currentKey]}</p>
+      return <p className='card-text'><b>{currentKey.split('_').join(' ')}:</b> {object[currentKey]}</p>
     }
   }
 

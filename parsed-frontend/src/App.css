@@ -184,6 +184,7 @@ body {
 
 .customize-text {
   color: #FFFFFF;
+  font-size: 40px;
   font-family: 'Signika', sans-serif;
 }
 
@@ -196,6 +197,7 @@ input[type='checkbox'] {
 
 input[type='checkbox'] + label {
   background: white;
+  font-size: 20px;
   padding: 11px;
   width: 25%;
   margin: 5px;
@@ -282,7 +284,7 @@ input[type='checkbox']:checked  + label .check-img {
 .customize-submit {
   position: absolute;
   margin-top: 40px;
-  margin-left: 200px;
+  margin-left: 3%;
   width: 150px;
   height: 40px;
   background: none;
@@ -308,8 +310,9 @@ input[type='checkbox']:checked  + label .check-img {
   font-size: 25px;
   position: absolute;
   margin-top: 40px;
-  margin-right: 50px;
+  margin-left: -17%;
   font-family: 'Signika', sans-serif;
+  outline: none;
 }
 
 #selectButton:hover {
@@ -328,10 +331,11 @@ input[type='checkbox'] + label:hover {
 }
 
 .display-card {
-  border: solid black 1px;
+  border: none;
   border-radius: 1em;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   margin: 10px;
-  width: 200px;
+  width: 300px;
   padding: 15px;
   background-color: #FFFFFF;
 }
@@ -339,6 +343,43 @@ input[type='checkbox'] + label:hover {
 .display-cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.5% 3%;
+}
+
+.download-csv {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  margin: 1.5%;
+  transform: translateY(-50%);
+}
+
+.download-btn {
+  background: none;
+  padding: 25px 10px 10px 10px;
+  width: 150px;
+  height: 150px;
+  border: solid white 2px;
+  border-radius: 80px;
+  color: white;
+  font-size: 25px;
+  outline: none;
+}
+
+.download-btn:hover {
+  background-color: white;
+  color: #5f9ab7;
+  color: #5f9ab7;
+}
+
+.download-text {
+  padding-top: 1000px;
+}
+
+.card-text {
+  font-size: 20px;
+  font-family: 'Signika', sans-serif;
 }
 
 .nested-display {
