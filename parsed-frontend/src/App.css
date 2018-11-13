@@ -1,22 +1,29 @@
 @import url("https://fonts.googleapis.com/css?family=Days+One");
 @import url("https://fonts.googleapis.com/css?family=Didact+Gothic|Fredoka+One|Signika|Yantramanav");
 
+* { box-sizing: border-box; }
+
 html {
   background-color: #5f9ab7;
   margin: auto 0
 }
 
+body {
+  /* overflow: hidden; */
+}
+
 .api-input {
   width: 600px;
   height: 80px;
-  border-radius: 80px;
+  border-radius: 100px;
   outline: none;
   text-align: center;
   font-size: 40px;
+  font-family: 'Signika', sans-serif;
 }
 
 .welcome-phrase {
-  color: #FFFFFF;
+  color: #fbfcfb;
   font-family: 'Signika', sans-serif;
 }
 
@@ -32,6 +39,80 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  z-index: 100;
+
+}
+
+.down-arrow {
+  background: none;
+  border-radius: 100px;
+  height: 40px;
+  width: 40px;
+  color: #ffffff90;
+  border-color: #ffffff90;
+  outline: none;
+  -webkit-user-select: none;
+  animation: pulse 1.5s infinite;
+}
+
+.up-arrow {
+  background: none;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 8.5px;
+  border-radius: 100px;
+  height: 40px;
+  width: 40px;
+  color: #ffffff90;
+  border-color: #ffffff90;
+  outline: none;
+  -webkit-user-select: none;
+  animation: pulse 1.5s infinite;
+}
+
+.how-it-works {
+  margin-top: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  color: #fbfcfb;
+  animation: pulse 1.5s infinite;
+  z-index: 100;
+}
+
+.back-to-home {
+  margin-top: 238px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  color: #ffffff90;
+  animation: pulse 1.5s infinite;
+  z-index: 100;
+}
+
+.about-text {
+  font-size: 20px;
+  margin-top: 10px;
+  font-family: 'Signika', sans-serif;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.45;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.45;
+  }
+}
+
+.flickity {
+  margin: 850px 0;
+  padding: 100px 0 0 0 ;
+  height: 500px;
+  background-color: #4f5358d9;
 }
 
 .submit-btn {
@@ -42,17 +123,22 @@ html {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   outline: none;
   font-size: 20px;
-  border: none
+  border: none;
+  -webkit-user-select: none;
+  color: #4f5358e8;
+  font-family: 'Signika', sans-serif;
 }
+
 
 .submit-btn:hover {
   transform: translateY(-2px);
   background-color: rgba(211,211,211, 0.8);
-
+  -webkit-user-select: none;
 }
 
 .submit-btn:active {
   transform: translateY(-2px);
+  -webkit-user-select: none;
 }
 
 .nav-bar {
@@ -60,6 +146,7 @@ html {
   background-color: #4f5358d9;
   height: 50px;
   z-index: 1;
+  -webkit-user-select: none;
 }
 
 .nav-links {
@@ -69,6 +156,7 @@ html {
   margin: 15px;
   text-decoration: none;
   font-family: 'Signika', sans-serif;
+  -webkit-user-select: none;
 }
 
 .nav-links:hover {
@@ -77,16 +165,18 @@ html {
   margin: 15px;
   text-decoration: none;
   font-family: 'Signika', sans-serif;
+  -webkit-user-select: none;
 }
 
 .nav-spacing {
-  padding-top: 1%;;
+  padding-top: 1%;
+  -webkit-user-select: none;
 }
 
 .customize-page {
   position: absolute;
   width: 1000px;
-  top: 24%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -101,27 +191,66 @@ input[type='checkbox'] {
   display: none;
   position: relative;
   z-index: 1;
+  -webkit-user-select: none;
 }
 
 input[type='checkbox'] + label {
   background: white;
   padding: 11px;
-  width: 30%;
+  width: 25%;
   margin: 5px;
   border-radius: 30px;
-  text-align: left;
+  text-align: center;
   display: inline-block;
   flex-wrap: wrap;
   z-index: 100;
+  -webkit-user-select: none;
+  color: #5f9ab7;
+  font-family: 'Signika', sans-serif;
+  font-weight: bold;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5)
 }
 
 input[type='checkbox']:checked  + label {
-  background: #d3d3d3cc;
-  animation-name: stretch;
-  animation-duration: .2s;
-  animation-timing-function: ease-out;
-  animation-delay: 0;
+  /* background: #d3d3d3cc; */
   z-index: 100;
+  -webkit-user-select: none;
+  color: ##346177;
+}
+
+input[type='checkbox']:checked  + label .check-img {
+  opacity: 1;
+  animation: grow 0.2s;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(0.3);
+  }
+  33% {
+    transform: scale(0.75);
+  }
+  66% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes shrink {
+  0% {
+    transform: scale(1);
+  }
+  33% {
+    transform: scale(1.3);
+  }
+  66% {
+    transform: scale(0.75);
+  }
+  100% {
+    transform: scale(0.3);
+  }
 }
 
 .checkboxes {
@@ -136,23 +265,67 @@ input[type='checkbox']:checked  + label {
   border: none;
   border-radius: 30px;
   z-index: -100;
+  -webkit-user-select: none;
 }
 
-/* @keyframes stretch {
-  0% {
-    transform: scale(.25);
-    background: #bfbfbf;
-  }
-  50% {
-    transform: scale(.5);
-    background: #bfbfbf;
-  }
-  100% {
-    transform: scale(1);
-    background: #bfbfbf;
-  }
-} */
+.check-img {
+  width: 10%;
+  margin-left: 90%;
+  opacity: 0;
+}
 
+.checkbox-words {
+  position: absolute;
+  padding-top: 0.3%;
+}
+
+.customize-submit {
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 200px;
+  width: 150px;
+  height: 40px;
+  background: none;
+  border: solid white 1px;
+  border-radius: 80px;
+  color: white;
+  font-size: 25px;
+  font-family: 'Signika', sans-serif;
+}
+
+.customize-submit:hover {
+  background-color: white;
+  color: #5f9ab7;
+}
+
+#selectButton {
+  width: 150px;
+  height: 40px;
+  background: none;
+  border: solid white 1px;
+  border-radius: 80px;
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  margin-top: 40px;
+  margin-right: 50px;
+  font-family: 'Signika', sans-serif;
+}
+
+#selectButton:hover {
+  background-color: white;
+  color: #5f9ab7;
+  color: #5f9ab7;
+}
+
+.customize-btns {
+  margin-right: 34%;
+}
+
+
+input[type='checkbox'] + label:hover {
+  transform: scale(1.002);
+}
 
 .display-card {
   border: solid black 1px;
@@ -170,4 +343,32 @@ input[type='checkbox']:checked  + label {
 
 .nested-display {
   padding-left: 15px;
+}
+
+.carousel {
+  background: #FAFAFA;
+}
+
+.carousel-cell {
+  width: 50%;
+  height: 300px;
+  margin-right: 10px;
+  background: #fbfcfb;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.carousel-contents {
+  margin-top: 10%;
+  text-align: center;
+
 }

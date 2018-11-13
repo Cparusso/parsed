@@ -55,9 +55,11 @@ const CheckBoxes = (props) => {
       <form onSubmit={submitDataSelections} >
         {sortThroughApiData(props.parsedData)}
         <br />
-        <input type='submit' value='Submit'/>
+        <div className='customize-btns'>
+          <input className='customize-submit' type='submit' value='Submit'/>
+          <button id='selectButton' onClick={selectAll} >Select All</button>
+        </div>
       </form>
-      <button id='selectButton' onClick={selectAll} >Select All</button>
     </div>
   )
 }

@@ -5,7 +5,7 @@ import Customize from './components/Customize'
 import Display from './components/Display'
 import Nav from './components/Nav'
 import Error from './components/Error'
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom"
+import { Route, Switch, Redirect, withRouter } from "react-router-dom"
 import './App.css'
 
 class App extends Component {
@@ -81,21 +81,20 @@ class App extends Component {
 
 
   render() {
+    document.body.style.overflow = this.props.location.pathname === "/welcome" ? 'hidden' : 'scroll'
     return (
-      <BrowserRouter>
-        <div className="app-display">
-          <Nav />
-          {this.renderDisplay()}
-          <Switch>
-            <Route path="/welcome" component={() => <Welcome changeApiUrl={this.changeApiUrl} />} />
-            <Route path="/customize" component={() => <Customize parsedData={this.state.parsedData} changeSelectedDataAttributes={this.changeSelectedDataAttributes} />} />
-            <Route path="/display" component={() => <Display parsedData={this.state.parsedData} displayData={this.state.displayData} />} />
-            <Route component={Error} />
-          </Switch>
-        </div>
-      </BrowserRouter>
+      <div className="app-display">
+        <Nav />
+        {this.renderDisplay()}
+        <Switch>
+          <Route path="/welcome" render={() => <Welcome changeApiUrl={this.changeApiUrl} />} />
+          <Route path="/customize" render={() => <Customize parsedData={this.state.parsedData} changeSelectedDataAttributes={this.changeSelectedDataAttributes} />} />
+          <Route path="/display" render={() => <Display parsedData={this.state.parsedData} displayData={this.state.displayData} />} />
+          <Route component={Error} />
+        </Switch>
+      </div>
     )
   }
 }
 
-export default App;
+export default withRouter(App);
