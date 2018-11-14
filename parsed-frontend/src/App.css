@@ -132,7 +132,6 @@ body {
 
 .submit-btn:hover {
   transform: translateY(-2px);
-  background-color: rgba(211,211,211, 0.8);
   -webkit-user-select: none;
 }
 
@@ -226,33 +225,17 @@ input[type='checkbox']:checked  + label .check-img {
 }
 
 @keyframes grow {
-  0% {
-    transform: scale(0.3);
-  }
-  33% {
-    transform: scale(0.75);
-  }
-  66% {
-    transform: scale(1.3);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes shrink {
-  0% {
-    transform: scale(1);
-  }
-  33% {
-    transform: scale(1.3);
-  }
-  66% {
-    transform: scale(0.75);
-  }
-  100% {
-    transform: scale(0.3);
-  }
+  0% { transform: scale(0.3) rotate(0deg); }
+  10% { transform: scale(0.4) rotate(-30deg); }
+  20% { transform: scale(0.5) rotate(30deg); }
+  30% { transform: scale(0.6) rotate(0deg); }
+  40% { transform: scale(0.7) rotate(30deg); }
+  50% { transform: scale(0.9) rotate(-30deg); }
+  60% { transform: scale(1) rotate(0deg); }
+  70% { transform: scale(1.1) rotate(-30deg); }
+  80% { transform: scale(1.3) rotate(30deg); }
+  90% { transform: scale(1.1) rotate(0deg); }
+  100% { transform: scale(1) rotate(30deg); }
 }
 
 .checkboxes {
@@ -370,7 +353,6 @@ input[type='checkbox'] + label:hover {
 .download-btn:hover {
   background-color: white;
   color: #5f9ab7;
-  color: #5f9ab7;
 }
 
 .download-text {
@@ -394,8 +376,10 @@ input[type='checkbox'] + label:hover {
   width: 50%;
   height: 300px;
   margin-right: 10px;
-  background: #fbfcfb;
+  margin-top: -2em;
   border-radius: 5px;
+  color: #fbfcfb;
+  font-size: 1.5em;
   counter-increment: carousel-cell;
 }
 
@@ -406,6 +390,41 @@ input[type='checkbox'] + label:hover {
   line-height: 200px;
   font-size: 80px;
   color: white;
+}
+
+/* white circles */
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid white;
+}
+
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: white;
+}
+
+/* no circle */
+.flickity-button {
+  background: transparent;
+}
+
+/* big previous & next buttons */
+.flickity-prev-next-button {
+  width: 100px;
+  height: 100px;
+}
+
+/* icon color */
+.flickity-button-icon {
+  fill: #4f5358d9;
+}
+
+/* hide disabled button */
+.flickity-button:disabled {
+  display: none;
 }
 
 .carousel-contents {

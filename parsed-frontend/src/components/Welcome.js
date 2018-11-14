@@ -41,7 +41,7 @@ class Welcome extends Component {
           <div className="carousel-contents">
             <h1>Step One:</h1>
             <h2>Find a JSON api</h2>
-            <p>Example: http://nflarrest.com/api/v1/team</p>
+            <p>ex: http://nflarrest.com/api/v1/team</p>
           </div>
         </div>
         <div className="carousel-cell">
