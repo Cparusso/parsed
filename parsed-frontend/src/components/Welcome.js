@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import Flickity from 'react-flickity-component'
 
 let flickityOptions = {
-    "freeScroll": false, "contain": false, "prevNextButtons": true, "pageDots": true, "draggable": true, "accessibility": true, "arrowShape": { x0: 10, x1: 65, y1: 45, x2: 70, y2: 40, x3: 20 }, "wrapAround": false
+    "freeScroll": false, "contain": false, "prevNextButtons": true, "pageDots": true, "draggable": false, "accessibility": true, "arrowShape": { x0: 10, x1: 65, y1: 45, x2: 70, y2: 40, x3: 20 }, "wrapAround": false
 }
 
 class Welcome extends Component {
@@ -40,22 +40,30 @@ class Welcome extends Component {
         <div className="carousel-cell">
           <div className="carousel-contents">
             <h1>Step One:</h1>
+            <hr></hr>
             <h2>Find a JSON api</h2>
             <p>ex: http://nflarrest.com/api/v1/team</p>
           </div>
         </div>
         <div className="carousel-cell">
           <div className="carousel-contents">
-            <h1>Step One:</h1>
-            <h2>Find a JSON api</h2>
-            <p>Example: http://nflarrest.com/api/v1/team</p>
+            <h1>Step Two:</h1>
+              <hr></hr>
+            <h2>Paste the api's URL into our parser above</h2>
           </div>
         </div>
         <div className="carousel-cell">
           <div className="carousel-contents">
-            <h1>Step One:</h1>
-            <h2>Find a JSON api</h2>
-            <p>Example: http://nflarrest.com/api/v1/team</p>
+            <h1>Step Three:</h1>
+              <hr></hr>
+            <h2>Select the data points you need</h2>
+          </div>
+        </div>
+        <div className="carousel-cell">
+          <div className="carousel-contents">
+            <h1>Step Four:</h1>
+              <hr></hr>
+            <h2>Read through a more simple version of the data you found</h2>
           </div>
         </div>
       </Flickity>
@@ -69,7 +77,7 @@ class Welcome extends Component {
       <Fragment className="entire-welcome-page">
         <div className='welcome-page'>
           <h1 className='welcome-phrase' id='logo'>Parsed</h1>
-          <h1 className='welcome-phrase'>Paste Any JSON API Below To Get Started</h1>
+          <h1 className='welcome-phrase sub-cap'>Paste Any JSON API Below To Get Started</h1>
           <input className='api-input' type='text' onChange={this.updateText} />
           <br />
           <NavLink to='/customize'>
@@ -81,8 +89,8 @@ class Welcome extends Component {
             <p className="about-text" >See how it works</p>
           </div>
           <div onClick={this.scrollUp} className="back-to-home">
-            <button className="up-arrow">^</button>
             <p className="about-text" >Back to top</p>
+            <button className="up-arrow">^</button>
           </div>
         </div>
         <div className="flickity" >

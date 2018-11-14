@@ -23,8 +23,12 @@ body {
 }
 
 .welcome-phrase {
-  color: #fbfcfb;
+  color: #FFF;
   font-family: 'Signika', sans-serif;
+}
+
+.sub-cap {
+  margin-top: -0.1em;
 }
 
 #logo {
@@ -40,7 +44,16 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
   z-index: 100;
+  /* animation: show-welcome 1s; */
+}
 
+@keyframes show-welcome {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .down-arrow {
@@ -60,6 +73,7 @@ body {
   font-size: 25px;
   text-align: center;
   padding-top: 8.5px;
+  margin-top: -0.4em;
   border-radius: 100px;
   height: 40px;
   width: 40px;
@@ -81,7 +95,7 @@ body {
 }
 
 .back-to-home {
-  margin-top: 238px;
+  margin-top: 16.3em;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
@@ -109,10 +123,10 @@ body {
 }
 
 .flickity {
-  margin: 850px 0;
-  padding: 100px 0 0 0 ;
-  height: 500px;
-  background-color: #4f5358d9;
+  margin: 46.8em 0;
+  padding: 12.5em 0 0 0 ;
+  height: 41.8em;
+  background-color: #292c2fd9;
 }
 
 .submit-btn {
@@ -142,7 +156,7 @@ body {
 
 .nav-bar {
   position: relative;
-  background-color: #4f5358d9;
+  background-color: #292c2fd9;
   height: 50px;
   z-index: 1;
   -webkit-user-select: none;
@@ -182,7 +196,7 @@ body {
 }
 
 .customize-text {
-  color: #FFFFFF;
+  color: #fdfdfd;
   font-size: 40px;
   font-family: 'Signika', sans-serif;
 }
@@ -308,7 +322,6 @@ input[type='checkbox']:checked  + label .check-img {
   margin-right: 34%;
 }
 
-
 input[type='checkbox'] + label:hover {
   transform: scale(1.002);
 }
@@ -373,14 +386,16 @@ input[type='checkbox'] + label:hover {
 }
 
 .carousel-cell {
-  width: 50%;
+  width: 40%;
   height: 300px;
   margin-right: 10px;
+  margin-left: 2.6em;
   margin-top: -2em;
   border-radius: 5px;
-  color: #fbfcfb;
-  font-size: 1.5em;
+  color: #c7cad0;
+  font-size: 1.4em;
   counter-increment: carousel-cell;
+  font-family: 'Signika', sans-serif;
 }
 
 /* cell number */
@@ -389,7 +404,24 @@ input[type='checkbox'] + label:hover {
   text-align: center;
   line-height: 200px;
   font-size: 80px;
-  color: white;
+}
+
+/* selected cell */
+.carousel-cell.is-selected {
+  font-size: 1.6em;
+  margin-top: -2.3em;
+  animation: grow-selected-cell 0.4s;
+}
+
+@keyframes grow-selected-cell {
+  from {
+    font-size: 1.4em;
+    margin-top: -2em;
+  }
+  to {
+    font-size: 1.6em;
+    margin-top: -2.3em;
+  }
 }
 
 /* white circles */
@@ -398,12 +430,12 @@ input[type='checkbox'] + label:hover {
   height: 12px;
   opacity: 1;
   background: transparent;
-  border: 2px solid white;
+  border: 2px solid #c7cad0;
 }
 
 /* fill-in selected dot */
 .flickity-page-dots .dot.is-selected {
-  background: white;
+  background: #c7cad0;
 }
 
 /* no circle */
@@ -430,5 +462,4 @@ input[type='checkbox'] + label:hover {
 .carousel-contents {
   margin-top: 10%;
   text-align: center;
-
 }
