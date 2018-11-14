@@ -1,392 +1,191 @@
 [
-  {
-    "Name": "Charlie",
-    "Animals": [
-      {
-        "Name": "Lucy",
-        "Age": 12
-      },
-      {
-        "Name": "Peanut",
-        "Age": 2
-      }
-    ],
-    "Age": 26,
-    "Family":
-    [
-      {
-        "Brothers":
-        [
-          {
-            "Name": "Mike",
-            "Age": 28
-          },
-          {
-            "Name": "Skyler",
-            "Age": 19
-          }
-        ]
-      },
-      {
-        "Sisters":
-        [
-          {
-            "Name": "Annarose",
-            "Age": 30
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "Name": "Charlie",
-    "Animals": [
-      {
-        "Name": "Lucy",
-        "Age": 12
-      },
-      {
-        "Name": "Peanut",
-        "Age": 2
-      }
-    ],
-    "Age": 26,
-    "Family":
-    [
-      {
-        "Brothers":
-        [
-          {
-            "Name": "Mike",
-            "Age": 28
-          },
-          {
-            "Name": "Skyler",
-            "Age": 19
-          }
-        ]
-      },
-      {
-        "Sisters":
-        [
-          {
-            "Name": "Annarose",
-            "Age": 30
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "Name": "Charlie",
-    "Animals": [
-      {
-        "Name": "Lucy",
-        "Age": 12
-      },
-      {
-        "Name": "Peanut",
-        "Age": 2
-      }
-    ],
-    "Age": 26,
-    "Family":
-    [
-      {
-        "Brothers":
-        [
-          {
-            "Name": "Mike",
-            "Age": 28
-          },
-          {
-            "Name": "Skyler",
-            "Age": 19
-          }
-        ]
-      },
-      {
-        "Sisters":
-        [
-          {
-            "Name": "Annarose",
-            "Age": 30
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "Name": "Charlie",
-    "Animals": [
-      {
-        "Name": "Lucy",
-        "Age": 12
-      },
-      {
-        "Name": "Peanut",
-        "Age": 2
-      }
-    ],
-    "Age": 26,
-    "Family":
-    [
-      {
-        "Brothers":
-        [
-          {
-            "Name": "Mike",
-            "Age": 28
-          },
-          {
-            "Name": "Skyler",
-            "Age": 19
-          }
-        ]
-      },
-      {
-        "Sisters":
-        [
-          {
-            "Name": "Annarose",
-            "Age": 30
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "Name": "Charlie",
-    "Animals": [
-      {
-        "Name": "Lucy",
-        "Age": 12
-      },
-      {
-        "Name": "Peanut",
-        "Age": 2
-      }
-    ],
-    "Age": 26,
-    "Family":
-    [
-      {
-        "Brothers":
-        [
-          {
-            "Name": "Mike",
-            "Age": 28
-          },
-          {
-            "Name": "Skyler",
-            "Age": 19
-          }
-        ]
-      },
-      {
-        "Sisters":
-        [
-          {
-            "Name": "Annarose",
-            "Age": 30
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "Name": "Charlie",
-    "Animals": [
-      {
-        "Name": "Lucy",
-        "Age": 12
-      },
-      {
-        "Name": "Peanut",
-        "Age": 2
-      }
-    ],
-    "Age": 26,
-    "Family":
-    [
-      {
-        "Brothers":
-        [
-          {
-            "Name": "Mike",
-            "Age": 28
-          },
-          {
-            "Name": "Skyler",
-            "Age": 19
-          }
-        ]
-      },
-      {
-        "Sisters":
-        [
-          {
-            "Name": "Annarose",
-            "Age": 30
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "Name": "Charlie",
-    "Animals": [
-      {
-        "Name": "Lucy",
-        "Age": 12
-      },
-      {
-        "Name": "Peanut",
-        "Age": 2
-      }
-    ],
-    "Age": 26,
-    "Family":
-    [
-      {
-        "Brothers":
-        [
-          {
-            "Name": "Mike",
-            "Age": 28
-          },
-          {
-            "Name": "Skyler",
-            "Age": 19
-          }
-        ]
-      },
-      {
-        "Sisters":
-        [
-          {
-            "Name": "Annarose",
-            "Age": 30
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "Name": "Charlie",
-    "Animals": [
-      {
-        "Name": "Lucy",
-        "Age": 12
-      },
-      {
-        "Name": "Peanut",
-        "Age": 2
-      }
-    ],
-    "Age": 26,
-    "Family":
-    [
-      {
-        "Brothers":
-        [
-          {
-            "Name": "Mike",
-            "Age": 28
-          },
-          {
-            "Name": "Skyler",
-            "Age": 19
-          }
-        ]
-      },
-      {
-        "Sisters":
-        [
-          {
-            "Name": "Annarose",
-            "Age": 30
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "Name": "Charlie",
-    "Animals": [
-      {
-        "Name": "Lucy",
-        "Age": 12
-      },
-      {
-        "Name": "Peanut",
-        "Age": 2
-      }
-    ],
-    "Age": 26,
-    "Family":
-    [
-      {
-        "Brothers":
-        [
-          {
-            "Name": "Mike",
-            "Age": 28
-          },
-          {
-            "Name": "Skyler",
-            "Age": 19
-          }
-        ]
-      },
-      {
-        "Sisters":
-        [
-          {
-            "Name": "Annarose",
-            "Age": 30
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "Name": "Charlie",
-    "Animals": [
-      {
-        "Name": "Lucy",
-        "Age": 12
-      },
-      {
-        "Name": "Peanut",
-        "Age": 2
-      }
-    ],
-    "Age": 26,
-    "Family":
-    [
-      {
-        "Brothers":
-        [
-          {
-            "Name": "Mike",
-            "Age": 28
-          },
-          {
-            "Name": "Skyler",
-            "Age": 19
-          }
-        ]
-      },
-      {
-        "Sisters":
-        [
-          {
-            "Name": "Annarose",
-            "Age": 30
-          }
-        ]
-      }
-    ]
-  }
+ {
+   "Name": "1 Charlie",
+   "Animals": [
+     {
+       "Name": "Lucy",
+       "Age": 12
+     },
+     {
+       "Name": "Peanut",
+       "Age": 2
+     },
+     {
+       "Name": "Lord Eggroll",
+       "Age": 45
+     }
+   ],
+   "Age": 26,
+   "Family":
+   [
+     {
+       "Brothers":
+       [
+         {
+           "Name": "Mike",
+           "Age": 28
+         },
+         {
+           "Name": "Skyler",
+           "Age": 19
+         }
+       ],
+       "Sisters":
+       [
+         {
+           "Name": "Annarose",
+           "Age": 30
+         }
+       ]
+     }
+   ]
+ },
+ {
+   "Name": "2 Charlie",
+   "Animals": [
+     {
+       "Name": "Lucy",
+       "Age": 12
+     },
+     {
+       "Name": "Peanut",
+       "Age": 2
+     }
+   ],
+   "Age": 26,
+   "Family":
+   [
+     {
+       "Brothers":
+       [
+         {
+           "Name": "Mike",
+           "Age": 28
+         },
+         {
+           "Name": "Skyler",
+           "Age": 19
+         }
+       ],
+       "Sisters":
+       [
+         {
+           "Name": "Annarose",
+           "Age": 30
+         }
+       ]
+     }
+   ]
+ },
+ {
+   "Name": "3 Charlie",
+   "Animals": [
+     {
+       "Name": "Lucy",
+       "Age": 12
+     },
+     {
+       "Name": "Peanut",
+       "Age": 2
+     }
+   ],
+   "Age": 26,
+   "Family":
+   [
+     {
+       "Brothers":
+       [
+         {
+           "Name": "Mike",
+           "Age": 28
+         },
+         {
+           "Name": "Skyler",
+           "Age": 19
+         }
+       ],
+       "Sisters":
+       [
+         {
+           "Name": "Annarose",
+           "Age": 30
+         }
+       ]
+     }
+   ]
+ },
+ {
+   "Name": "4 Charlie",
+   "Animals": [
+     {
+       "Name": "Lucy",
+       "Age": 12
+     },
+     {
+       "Name": "Peanut",
+       "Age": 2
+     }
+   ],
+   "Age": 26,
+   "Family":
+   [
+     {
+       "Brothers":
+       [
+         {
+           "Name": "Mike",
+           "Age": 28
+         },
+         {
+           "Name": "Skyler",
+           "Age": 19
+         }
+       ],
+       "Sisters":
+       [
+         {
+           "Name": "Annarose",
+           "Age": 30
+         }
+       ]
+     }
+   ]
+ },
+ {
+   "Name": "5 Charlie",
+   "Animals": [
+     {
+       "Name": "Lucy",
+       "Age": 12
+     },
+     {
+       "Name": "Peanut",
+       "Age": 2
+     }
+   ],
+   "Age": 26,
+   "Family":
+   [
+     {
+       "Brothers":
+       [
+         {
+           "Name": "Mike",
+           "Age": 28
+         },
+         {
+           "Name": "Skyler",
+           "Age": 19
+         }
+       ],
+       "Sisters":
+       [
+         {
+           "Name": "Annarose",
+           "Age": 30
+         }
+       ]
+     }
+   ]
+ }
 ]

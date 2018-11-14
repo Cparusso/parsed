@@ -85,7 +85,7 @@ body {
 }
 
 .how-it-works {
-  margin-top: 30px;
+  margin-top: 3em;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
@@ -328,12 +328,14 @@ input[type='checkbox'] + label:hover {
 
 .display-card {
   border: none;
-  border-radius: 1em;
+  border-radius: 0.4em;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   margin: 10px;
   width: 300px;
+  height: 20em;
   padding: 15px;
   background-color: #FFFFFF;
+  overflow: auto;
 }
 
 .display-cards {
@@ -354,22 +356,19 @@ input[type='checkbox'] + label:hover {
 .download-btn {
   background: none;
   padding: 25px 10px 10px 10px;
-  width: 150px;
-  height: 150px;
+  width: 6em;
+  height: 6em;
   border: solid white 2px;
   border-radius: 80px;
   color: white;
-  font-size: 25px;
+  font-size: 1.4em;
   outline: none;
+  font-family: 'Signika', sans-serif;
 }
 
 .download-btn:hover {
   background-color: white;
   color: #5f9ab7;
-}
-
-.download-text {
-  padding-top: 1000px;
 }
 
 .card-text {
@@ -378,7 +377,11 @@ input[type='checkbox'] + label:hover {
 }
 
 .nested-display {
-  padding-left: 15px;
+  padding-left: 1em;
+}
+
+.un-nest {
+  margin-left: -1em;
 }
 
 .carousel {
@@ -440,7 +443,7 @@ input[type='checkbox'] + label:hover {
 
 /* no circle */
 .flickity-button {
-  background: transparent;
+  /* background: transparent; */
 }
 
 /* big previous & next buttons */
