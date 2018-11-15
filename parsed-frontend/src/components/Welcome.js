@@ -83,7 +83,6 @@ class Welcome extends Component {
           <NavLink to='/customize'>
             <button className='submit-btn' onClick={() => this.props.changeApiUrl(currentText)} >Submit</button>
           </NavLink>
-          <p>http://nflarrest.com/api/v1/team, http://nflarrest.com/api/v1/player, http://nflarrest.com/api/v1/position</p>
           <div onClick={this.scrollDown} className="how-it-works">
             <button className="down-arrow">V</button>
             <p className="about-text" >See how it works</p>
