@@ -2,13 +2,12 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom'
 
 class Nav extends Component {
+
   render() {
     return (
       <div className='nav-bar'>
         <div className='nav-spacing'>
-          <NavLink className='nav-links' to="/welcome">Welcome</NavLink>
-          <NavLink className='nav-links' to="/customize">Customize</NavLink>
-          <NavLink className='nav-links' to="/display">Display</NavLink>
+          <NavLink className='nav-links' to="/home">Home</NavLink>
         </div>
       </div>
     )
@@ -16,3 +15,6 @@ class Nav extends Component {
 }
 
 export default Nav
+
+// <NavLink className='nav-links' to="/customize">Customize</NavLink>
+// <NavLink className='nav-links' to="/display">Display</NavLink>

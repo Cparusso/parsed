@@ -355,6 +355,14 @@ input[type='checkbox'] + label:hover {
   transform: translateY(-50%);
 }
 
+.back-to-customize {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  margin: 1.5%;
+  transform: translateY(-50%);
+}
+
 .download-btn {
   background: none;
   padding: 25px 10px 10px 10px;

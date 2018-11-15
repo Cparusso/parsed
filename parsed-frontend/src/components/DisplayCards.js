@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import DisplayCard from './DisplayCard';
 import uuid from 'uuid'
+import { NavLink } from 'react-router-dom'
 
 class DisplayCards extends Component {
 
@@ -62,6 +63,10 @@ class DisplayCards extends Component {
         </div>
         <div className='download-csv'>
           <button className='download-btn' onClick={() => this.downloadCsv(this.manipulateParsedDataForCsv())}>Download as CSV<br></br><span>{'<--'}</span></button>
+        </div>
+        <div className='back-to-customize'>
+          <NavLink className='nav-links' to="/customize"><button className='download-btn'>Change Data
+            <br></br><span>{'<--'}</span></button></NavLink>
         </div>
       </div>
     )
