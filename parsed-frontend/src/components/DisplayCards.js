@@ -62,7 +62,7 @@ class DisplayCards extends Component {
           {this.makeDisplayCards()}
         </div>
         <div className='download-csv'>
-          <button className='download-btn' onClick={() => this.downloadCsv(this.manipulateParsedDataForCsv())}>Download as CSV<br></br><span>{'<--'}</span></button>
+          <button className='download-btn' onClick={() => this.downloadCsv(this.manipulateParsedDataForCsv())}>Get as CSV<br></br><span>{'<--'}</span></button>
         </div>
         <div className='back-to-customize'>
           <NavLink className='nav-links' to="/customize"><button className='download-btn'>Change Data
