@@ -1,15 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Days+One");
 @import url("https://fonts.googleapis.com/css?family=Didact+Gothic|Fredoka+One|Signika|Yantramanav");
 
-* { box-sizing: border-box; }
-
-html {
-  background-color: #5f9ab7;
-  margin: auto 0
-}
-
 body {
-  /* overflow: hidden; */
+  background-color: #292c2f;
+  margin: auto 0;
+  overflow: hidden;
 }
 
 .api-input {
@@ -39,14 +34,12 @@ body {
 }
 
 .welcome-page {
+  padding-top: 15vh;
+  background-color: #5f9ab7;
   position: absolute;
-  width: 80vw;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 78.5vh;
   text-align: center;
-  z-index: 100;
-  /* animation: show-welcome 1s; */
 }
 
 @keyframes show-welcome {
@@ -61,8 +54,8 @@ body {
 .down-arrow {
   background: none;
   border-radius: 100px;
-  height: 3em;
-  width: 3em;
+  height: 2.5vw;
+  width: 2.5vw;
   color: #ffffff90;
   border-color: #ffffff90;
   outline: none;
@@ -70,19 +63,9 @@ body {
   animation: pulse 1.5s infinite;
 }
 
-/* .how-it-works {
-  position: absolute;
-  top: 109%;
-  left: 50%;
-  transform: translate(-50%);
-  color: #fbfcfb;
-  animation: pulse 1.5s infinite;
-  z-index: 100;
-} */
-
 .how-it-works {
-  margin-top: 9vh;
   position: absolute;
+  top: 82vh;
   left: 50%;
   transform: translate(-50%);
   color: #fbfcfb;
@@ -97,8 +80,8 @@ body {
   padding-top: 0.55vw;
   margin-top: -0.7vw;
   border-radius: 100px;
-  height: 6vh;
-  width: 6vh;
+  height: 2.5vw;
+  width: 2.5vw;
   color: #ffffff90;
   border-color: #ffffff90;
   outline: none;
@@ -106,18 +89,8 @@ body {
   animation: pulse 1.5s infinite;
 }
 
-/* .back-to-home {
-  margin-top: 18vw;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  color: #ffffff90;
-  animation: pulse 1.5s infinite;
-  z-index: 100;
-} */
-
 .back-to-home {
-  margin-top: 42vh;
+  margin-top: 21.4vh;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
@@ -126,7 +99,8 @@ body {
   z-index: 100;
 }
 
-/* @media (max-width: 1400px) {
+/*
+@media (max-width: 1400px) {
   .back-to-home { margin-top: 60vh; }
 } */
 
@@ -149,9 +123,9 @@ body {
 }
 
 .flickity {
-  margin: 46.8em 0;
+  margin: 93.5vh 0 0 0;
   padding: 12.5em 0 0 0 ;
-  height: 105vh;
+  height: 71vh;
   background-color: #292c2fd9;
 }
 
@@ -183,7 +157,7 @@ body {
 .nav-bar {
   position: relative;
   background-color: #292c2fd9;
-  height: 45px;
+  height: 6.5vh;
   z-index: 1;
   -webkit-user-select: none;
 }
