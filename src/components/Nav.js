@@ -7,7 +7,7 @@ class Nav extends Component {
     return (
       <div className='nav-bar'>
         <div className='nav-spacing'>
-          <NavLink className='nav-links' to="/home">Home</NavLink>
+          <NavLink className='nav-links' to="/">Home</NavLink>
         </div>
       </div>
     )

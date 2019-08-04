@@ -87,9 +87,9 @@ class App extends Component {
         <Nav />
         {this.renderDisplay()}
         <Switch>
-          <Route path="/" render={(props) => <Welcome  {...props} changeApiUrl={this.changeApiUrl} />} />
-          <Route path="/customize" render={() => <Customize parsedData={this.state.parsedData} changeSelectedDataAttributes={this.changeSelectedDataAttributes} />} />
-          <Route path="/display" render={() => <Display parsedData={this.state.parsedData} displayData={this.state.displayData} />} />
+          <Route exact path="/" render={(props) => <Welcome  {...props} changeApiUrl={this.changeApiUrl} />} />
+          <Route exact path="/customize" render={() => <Customize parsedData={this.state.parsedData} changeSelectedDataAttributes={this.changeSelectedDataAttributes} />} />
+          <Route exact path="/display" render={() => <Display parsedData={this.state.parsedData} displayData={this.state.displayData} />} />
           <Route component={Error} />
         </Switch>
       </div>
