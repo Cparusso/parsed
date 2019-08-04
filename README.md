@@ -22,4 +22,4 @@ https://parsedapp.herokuapp.com/home
 
 ## Credits
 
-Michael Schwartz and Charlie Russo
+Charlie Russo and Michael Schwartz
