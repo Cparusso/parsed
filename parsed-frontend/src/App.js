@@ -81,7 +81,7 @@ class App extends Component {
 
 
   render() {
-    document.body.style.overflow = this.props.location.pathname === "/welcome" ? 'hidden' : 'scroll'
+    document.body.style.overflow = this.props.location.pathname === "/home" ? 'hidden' : 'scroll'
     return (
       <div className="app-display">
         <Nav />
