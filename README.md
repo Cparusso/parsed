@@ -14,7 +14,7 @@ https://parsedapp.herokuapp.com/home
 
 4. Download the data as a CSV
 
-## Snapshots
+## Screenshots
 
 ![alt tag](https://i.imgur.com/2OUaSqf.png)
 
