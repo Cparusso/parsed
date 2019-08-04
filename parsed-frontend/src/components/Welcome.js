@@ -77,7 +77,7 @@ class Welcome extends Component {
       <Fragment className="entire-welcome-page">
         <div className='welcome-page'>
           <h1 className='welcome-phrase' id='logo'>Parsed</h1>
-          <h1 className='welcome-phrase sub-cap'>Paste Any JSON API Below To Get Started</h1>
+          <h1 className='welcome-phrase sub-cap'>Paste a JSON API URL Below To Get Started</h1>
           <input className='api-input' type='text' onChange={this.updateText} />
           <br />
           <NavLink to='/customize'>
