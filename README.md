@@ -6,7 +6,7 @@ Parsed is a tool that can help non-developers parse through JSON api data more e
 
 ## Instructions
 
-1. Find a JSON api URL, like this: https://jsonplaceholder.typicode.com/posts
+1. Find a JSON api URL, like this: `https://jsonplaceholder.typicode.com/posts`
 
 2. Paste it into the search bar on the front page
 
