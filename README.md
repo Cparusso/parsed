@@ -2,7 +2,7 @@
 
 Parsed is a tool that can help non-developers parse through JSON api data more easily. Built with React.
 
-https://parsedapp.herokuapp.com/home
+[Click here to view the site.](https://parsedapp.herokuapp.com/home)
 
 ## Instructions
 
