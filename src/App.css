@@ -346,6 +346,10 @@ input[type='checkbox'] + label:hover {
   margin: 1.5% 3%;
 }
 
+.small-text {
+  font-size: 0.8em;
+}
+
 .download-csv {
   position: fixed;
   right: -1%;

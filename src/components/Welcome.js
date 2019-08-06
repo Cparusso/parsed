@@ -42,7 +42,7 @@ class Welcome extends Component {
             <h1>Step One:</h1>
             <hr></hr>
             <h2>Find a JSON api</h2>
-            <p>ex: https://jsonplaceholder.typicode.com/posts</p>
+            <p className="small-text">ex: https://jsonplaceholder.typicode.com/posts</p>
           </div>
         </div>
         <div className="carousel-cell">
