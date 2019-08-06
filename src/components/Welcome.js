@@ -42,7 +42,7 @@ class Welcome extends Component {
             <h1>Step One:</h1>
             <hr></hr>
             <h2>Find a JSON api</h2>
-            <p>ex: http://nflarrest.com/api/v1/team</p>
+            <p>ex: https://jsonplaceholder.typicode.com/posts</p>
           </div>
         </div>
         <div className="carousel-cell">
@@ -72,7 +72,7 @@ class Welcome extends Component {
 
   render() {
     const { currentText } = this.state
-    console.log(this.props)
+
     return (
       <Fragment className="entire-welcome-page">
         <div className='welcome-page'>
